@@ -1,0 +1,139 @@
+{
+  "schema_version": "eligibility-v1",
+  "source_version": "step4-eligibility-2024-2026-v1",
+  "verification": {
+    "checked_by": "AI代理",
+    "human_signoff": false,
+    "checked_on": "2026-11-04",
+    "basis": "三年章程完整条款核读、目录逐页表格与附注即时解析、第一页可视范围标题核对、官方父页附件链接核验、原SHA256清单核对。",
+    "note": "AI来源核验和程序解析不等于课题负责人的人工审核；不保存或比较真实考生个人条件。"
+  },
+  "checksum_registry": {
+    "path": "知识库官方资料/07_来源与覆盖说明/文件校验清单_SHA256.csv",
+    "sha256": "cb501b5bc8d37e09683e28f7489eabc2980d8e975aded5d9e5e4b28cb4b63138"
+  },
+  "sources": [
+    {
+      "source_id": "eligibility-charter-2024",
+      "year": 2024,
+      "role": "charter_html",
+      "scope": "general_charter",
+      "scope_label": "普通本科招生章程（具体专业、类型和省份限定以条款原文为准）",
+      "path": "知识库官方资料/01_招生章程/武汉理工大学2024年普通本科招生章程.html",
+      "title": "武汉理工大学2024年普通本科招生章程",
+      "url": "https://zs.whut.edu.cn/zc/zszc/202406/t20240621_1004339.shtml",
+      "selector": ".content_text > .view.TRS_UEDITOR",
+      "sha256": "a77134424c186862ca500eeed8439abe3d42985c9937848bf638a41712add4a8",
+      "size_bytes": 69191
+    },
+    {
+      "source_id": "eligibility-charter-2025",
+      "year": 2025,
+      "role": "charter_html",
+      "scope": "general_charter",
+      "scope_label": "普通本科招生章程（具体专业、类型和省份限定以条款原文为准）",
+      "path": "知识库官方资料/01_招生章程/武汉理工大学2025年普通本科招生章程.html",
+      "title": "武汉理工大学2025年普通本科招生章程",
+      "url": "https://zs.whut.edu.cn/zc/zszc/202505/t20250530_1331279.shtml",
+      "selector": ".content_text > .view.TRS_UEDITOR",
+      "sha256": "5b8959c6fcdb41e2cbc65b3b0d6c0cef485e314d1fe02a906e96dd47fa6a0008",
+      "size_bytes": 37882
+    },
+    {
+      "source_id": "eligibility-charter-2026",
+      "year": 2026,
+      "role": "charter_html",
+      "scope": "general_charter",
+      "scope_label": "普通本科招生章程（具体专业、类型和省份限定以条款原文为准）",
+      "path": "知识库官方资料/01_招生章程/武汉理工大学2026年普通本科招生章程.html",
+      "title": "武汉理工大学2026年普通本科招生章程",
+      "url": "https://zs.whut.edu.cn/zc/tzgg/202606/t20260601_1401240.shtml",
+      "selector": ".content_text > .view.TRS_UEDITOR",
+      "sha256": "7aae57d2ba653f1c8e4e6a75cd9abc4e5981dbdb6ba0c8ce474ea04f8aa0a6b7",
+      "size_bytes": 68227
+    },
+    {
+      "source_id": "eligibility-catalogue-2024",
+      "year": 2024,
+      "role": "catalogue_pdf",
+      "scope": "taiwan_gsat",
+      "scope_label": "台湾地区学测招生专业目录；不得用于全国普通高考条件判断",
+      "path": "知识库官方资料/04_报考条件与专业目录/武汉理工大学2024年官方招生专业目录.pdf",
+      "title": "武汉理工大学2024年依据台湾地区大学入学考试学科能力测试成绩招收台湾高中毕业生专业目录",
+      "url": "https://zs.whut.edu.cn/zc/tslx/gatzs/202405/P020240529543306612981.pdf",
+      "parent_url": "https://zs.whut.edu.cn/zc/tslx/gatzs/202405/t20240529_994169.shtml",
+      "scope_verification": {
+        "visual_title": "武汉理工大学2024年依据台湾地区大学入学考试学科能力测试成绩招收台湾高中毕业生专业目录",
+        "title_in_text_layer": false,
+        "visual_review_artifact": "reports/eligibility_pdf_inspection/audit_catalog_2024_page1.png",
+        "checked_by": "AI代理",
+        "human_signoff": false,
+        "parent_link_status": "verified",
+        "parent_link_verification": "root已使用官方网页open和附件click逐一核对；三父页均指向登记的同一PDF。",
+        "note": "适用范围来自PDF第一页可视标题及官方父页面，不根据URL栏目或语言/科类字段推测。"
+      },
+      "sha256": "8aa6c71d5829e032929289bf8ecf96364b297c2c3d661e1993f8c4bb026e9663",
+      "size_bytes": 245443
+    },
+    {
+      "source_id": "eligibility-catalogue-2025",
+      "year": 2025,
+      "role": "catalogue_pdf",
+      "scope": "taiwan_gsat",
+      "scope_label": "台湾地区学测招生专业目录；不得用于全国普通高考条件判断",
+      "path": "知识库官方资料/04_报考条件与专业目录/武汉理工大学2025年官方招生专业目录.pdf",
+      "title": "武汉理工大学2025年依据台湾地区大学入学考试学科能力测试成绩招收台湾高中毕业生专业目录",
+      "url": "https://zs.whut.edu.cn/zc/tslx/gatzs/202501/P020250116366051807158.pdf",
+      "parent_url": "https://zs.whut.edu.cn/zc/tslx/gatzs/202501/t20250116_1318419.shtml",
+      "scope_verification": {
+        "visual_title": "武汉理工大学2025年依据台湾地区大学入学考试学科能力测试成绩招收台湾高中毕业生专业目录",
+        "title_in_text_layer": false,
+        "visual_review_artifact": "reports/eligibility_pdf_inspection/audit_catalog_2025_page1.png",
+        "checked_by": "AI代理",
+        "human_signoff": false,
+        "parent_link_status": "verified",
+        "parent_link_verification": "root已使用官方网页open和附件click逐一核对；三父页均指向登记的同一PDF。",
+        "note": "适用范围来自PDF第一页可视标题及官方父页面，不根据URL栏目或语言/科类字段推测。"
+      },
+      "sha256": "31d8c3164c6dd877df9533d0ac74b3e5a34e79fcdd2a412b2b989502171ed70d",
+      "size_bytes": 191494
+    },
+    {
+      "source_id": "eligibility-catalogue-2026",
+      "year": 2026,
+      "role": "catalogue_pdf",
+      "scope": "taiwan_gsat",
+      "scope_label": "台湾地区学测招生专业目录；不得用于全国普通高考条件判断",
+      "path": "知识库官方资料/04_报考条件与专业目录/武汉理工大学2026年官方招生专业目录.pdf",
+      "title": "武汉理工大学2026年依据台湾地区大学入学考试学科能力测试成绩招收台湾高中毕业生专业目录",
+      "url": "https://zs.whut.edu.cn/zc/tzgg/202601/P020260105430392819073.pdf",
+      "parent_url": "https://zs.whut.edu.cn/zc/tzgg/202601/t20260105_1383115.shtml",
+      "scope_verification": {
+        "visual_title": "武汉理工大学2026年依据台湾地区大学入学考试学科能力测试成绩招收台湾高中毕业生专业目录",
+        "title_in_text_layer": false,
+        "visual_review_artifact": "reports/eligibility_pdf_inspection/audit_catalog_2026_page1.png",
+        "checked_by": "AI代理",
+        "human_signoff": false,
+        "parent_link_status": "verified",
+        "parent_link_verification": "root已使用官方网页open和附件click逐一核对；三父页均指向登记的同一PDF。",
+        "note": "适用范围来自PDF第一页可视标题及官方父页面，不根据URL栏目或语言/科类字段推测。"
+      },
+      "sha256": "2528b70c06496734f381bc8c5b4ff2c346470f4886b321e8053bb9e0302d5bf8",
+      "size_bytes": 153227
+    }
+  ],
+  "pending_review": [],
+  "coverage_gaps": [
+    "三年专业目录均仅适用于台湾学测招生，不替代国内普通高考的全国分省选科或体检规则。",
+    "目录的科类、教学语言不能改写为国内完整选科组合或高考应试外语资格。",
+    "章程仅保存原条款；未列明某专业限制不等于无限制，身体条件以官方体检结果及当年规定为准。",
+    "本模块未导入台湾学测报名资格完整简章；仅能检索专业目录与附注，不能据此确认完整报考资格。"
+  ],
+  "processing_rules": [
+    "不继承目录空白单元格；2025管理科学与工程类的科类及教学语言保留空白。",
+    "保留完整章程条款和全部原始p定位，避免拆掉否定、或/且和适用条件。",
+    "目录专业行与全局附注分别保存并关联；星号仅为认证/评估标记。",
+    "目录与章程按scope隔离，不能据相似主题合并或无依据择一。",
+    "源码摘要、manifest和全数据库内容指纹改变时拒绝读取旧记录。"
+  ]
+}

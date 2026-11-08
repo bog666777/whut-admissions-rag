@@ -1,0 +1,45 @@
+{
+  "sample_version": "step1-text-2026-v1",
+  "verification": {
+    "basis": "现有资料来源清单、SHA256清单、本轮代理逐段对照官方网页正文",
+    "checked_on": "2026-11-04",
+    "checked_by": "AI代理",
+    "human_signoff": false,
+    "note": "仅确认来源、适用年份和可直接解析的正文；不冒称用户已人工审核，回答仍需用户验证。仅显式列入本清单的非图片文本可入库。"
+  },
+  "sources": [
+    {
+      "source_id": "charter-2026",
+      "path": "知识库官方资料/01_招生章程/武汉理工大学2026年普通本科招生章程.html",
+      "url": "https://zs.whut.edu.cn/zc/tzgg/202606/t20260601_1401240.shtml",
+      "title": "武汉理工大学2026年普通本科招生章程",
+      "year": 2026,
+      "published_on": "2026-05-29",
+      "sha256": "7aae57d2ba653f1c8e4e6a75cd9abc4e5981dbdb6ba0c8ce474ea04f8aa0a6b7",
+      "kind": "charter",
+      "selector": ".content_text > .view.TRS_UEDITOR"
+    },
+    {
+      "source_id": "cooperation-2026",
+      "path": "知识库官方资料/06_中外合作与专业介绍/2026年中外合作办学招生专业说明.html",
+      "url": "https://zs.whut.edu.cn/zc/tzgg/202606/t20260612_1403028.shtml",
+      "title": "2026年中外合作办学招生专业说明",
+      "year": 2026,
+      "published_on": "2026-06-12",
+      "sha256": "1ec44d6b8cc047fad94bfa591a0dacc85a9c6f5ae02cc06ffc8e436534723e85",
+      "kind": "cooperation",
+      "selector": ".content_text > .view.TRS_UEDITOR"
+    },
+    {
+      "source_id": "digital-economy-correction-2026",
+      "path": "知识库官方资料/06_中外合作与专业介绍/关于数字经济中外合作办学2026年暂不招生的说明.html",
+      "url": "https://zs.whut.edu.cn/zc/tzgg/202606/t20260618_1403855.shtml",
+      "title": "关于数字经济（中外合作办学）2026年招生的有关说明",
+      "year": 2026,
+      "published_on": "2026-06-18",
+      "sha256": "ebd954170054b4cd7d015a1d9495f95e69202299190266fcbc07f527194f9b22",
+      "kind": "correction",
+      "selector": ".content_text > .view.TRS_UEDITOR"
+    }
+  ]
+}

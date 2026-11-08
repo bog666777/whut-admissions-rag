@@ -1,0 +1,209 @@
+{
+  "schema_version": "structured-v1",
+  "sample_version": "step2-official-structured-2024-2026-v1",
+  "verification": {
+    "checked_by": "AI代理",
+    "human_signoff": false,
+    "checked_on": "2026-11-04",
+    "basis": "原有SHA256清单核对；官方接口JSON作为原始行，四份CSV逐字段逐次返回交叉核对；不使用OCR或第三方数据。",
+    "note": "本清单和程序核验不等于课题负责人的人工审核签字。"
+  },
+  "checksum_registry": {
+    "path": "知识库官方资料/07_来源与覆盖说明/文件校验清单_SHA256.csv",
+    "sha256": "cb501b5bc8d37e09683e28f7489eabc2980d8e975aded5d9e5e4b28cb4b63138"
+  },
+  "datasets": {
+    "plan": {
+      "raw_source_id": "plan-raw",
+      "allowed_years": [
+        2026
+      ],
+      "ext_sources": {
+        "recruitSchemeList": {
+          "granularity": "major",
+          "csv_source_id": "plan-major-csv",
+          "csv_columns": [
+            "year",
+            "province",
+            "subjectType",
+            "type",
+            "majorType",
+            "recruitNum",
+            "electiveSubject",
+            "remarks"
+          ]
+        },
+        "recruitProvincialList": {
+          "granularity": "school_summary",
+          "csv_source_id": "plan-summary-csv",
+          "csv_columns": [
+            "year",
+            "province",
+            "subjectType",
+            "type",
+            "recruitNum"
+          ]
+        }
+      }
+    },
+    "admission": {
+      "raw_source_id": "admission-raw",
+      "allowed_years": [
+        2024,
+        2025
+      ],
+      "ext_sources": {
+        "recruitByMajorList": {
+          "granularity": "major",
+          "csv_source_id": "admission-major-csv",
+          "csv_columns": [
+            "year",
+            "province",
+            "subjectType",
+            "type",
+            "majorType",
+            "skx",
+            "zgf",
+            "zdf",
+            "wcz",
+            "pjf",
+            "electiveSubject",
+            "remarks"
+          ]
+        },
+        "recruitStatisticsList": {
+          "granularity": "school_summary",
+          "csv_source_id": "admission-summary-csv",
+          "csv_columns": [
+            "year",
+            "province",
+            "subjectType",
+            "type",
+            "skx",
+            "zgf",
+            "zdf",
+            "wcz",
+            "pjf"
+          ]
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "source_id": "plan-raw",
+      "dataset": "plan",
+      "role": "raw_json",
+      "path": "知识库官方资料/02_招生计划/官方接口原始响应_招生计划_请求2024-2026.json",
+      "title": "武汉理工大学招生计划公开接口原始响应",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bkzsjh/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitScheme/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "c7aa85e795678369df8d1811cc2191b1f2488178df7cfb74552aa52c5f180754",
+      "size_bytes": 2600826
+    },
+    {
+      "source_id": "plan-major-csv",
+      "dataset": "plan",
+      "role": "csv_crosscheck",
+      "path": "知识库官方资料/02_招生计划/招生计划_分专业_2026.csv",
+      "title": "武汉理工大学2026年招生计划分专业导出",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bkzsjh/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitScheme/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "72d4aa3fa7a265df9f6c159cf28db5144e9af9491d5eec2ab1530740b07239c9",
+      "size_bytes": 702232
+    },
+    {
+      "source_id": "plan-summary-csv",
+      "dataset": "plan",
+      "role": "csv_crosscheck",
+      "path": "知识库官方资料/02_招生计划/招生计划_省级汇总_2026.csv",
+      "title": "武汉理工大学2026年招生计划省级汇总导出",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bkzsjh/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitScheme/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "a3e016882838fa5294794b7c473d763e70c19334ba4a655807aeed7bd9a60d04",
+      "size_bytes": 42826
+    },
+    {
+      "source_id": "admission-raw",
+      "dataset": "admission",
+      "role": "raw_json",
+      "path": "知识库官方资料/03_录取分数与位次/官方接口原始响应_录取分数与位次_请求2024-2026.json",
+      "title": "武汉理工大学历年录取分数与位次公开接口原始响应",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bklqqk/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "5adc2e531cdb87d1e656c3c8290b83cf7afefcab311984768514d8ed073035aa",
+      "size_bytes": 2140194
+    },
+    {
+      "source_id": "admission-major-csv",
+      "dataset": "admission",
+      "role": "csv_crosscheck",
+      "path": "知识库官方资料/03_录取分数与位次/录取情况_分专业_2024-2025.csv",
+      "title": "武汉理工大学2024—2025年录取情况分专业导出",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bklqqk/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "b47e62824fbffad8970c6bfa4f03e0067e0e0b0a1b79d4d1ba2277d68781baf6",
+      "size_bytes": 378673
+    },
+    {
+      "source_id": "admission-summary-csv",
+      "dataset": "admission",
+      "role": "csv_crosscheck",
+      "path": "知识库官方资料/03_录取分数与位次/录取情况_省级汇总_2024-2025.csv",
+      "title": "武汉理工大学2024—2025年录取情况省级汇总导出",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bklqqk/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "353c482f26b537aac96240b86c2e34e17c5f6289829ad813e1263e12b5c2167a",
+      "size_bytes": 29743
+    },
+    {
+      "source_id": "plan-endpoint-reference",
+      "dataset": "plan",
+      "role": "endpoint_reference",
+      "path": "知识库官方资料/02_招生计划/官方入口_招生计划_加载脚本.js",
+      "title": "武汉理工大学招生计划官方页面加载脚本",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bkzsjh/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitScheme/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "737f5b26d51b19e14840e8c07d147726b1d71e0f269ce7e91b47ff8301544f5b",
+      "size_bytes": 10012,
+      "api_endpoints": [
+        "https://zs.whut.edu.cn/enroll-info/recruitScheme/selYearbyProvince.do",
+        "https://zs.whut.edu.cn/enroll-info/recruitScheme/selSubjectTypeByProvinceAndYear.do",
+        "https://zs.whut.edu.cn/enroll-info/recruitScheme/selTypeByProvinceAndYearAndSubjectType.do",
+        "https://zs.whut.edu.cn/enroll-info/recruitScheme/selRecruitByProvinceAndYearAndSubjectType.do"
+      ]
+    },
+    {
+      "source_id": "admission-endpoint-reference",
+      "dataset": "admission",
+      "role": "endpoint_reference",
+      "path": "知识库官方资料/03_录取分数与位次/官方入口_历年分数_加载脚本.js",
+      "title": "武汉理工大学历年分数官方页面加载脚本",
+      "official_url": "https://zs.whut.edu.cn/bkcx/bklqqk/",
+      "api_endpoint": "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selRecruitByProvinceAndYearAndSubjectType.do",
+      "sha256": "bb5e029ba1da93f1f302711aabb1c1b671f26367e567bb79a6c5dd61110556f4",
+      "size_bytes": 9050,
+      "api_endpoints": [
+        "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selYearbyProvince.do",
+        "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selSubjectTypeByProvinceAndYear.do",
+        "https://zs.whut.edu.cn/enroll-info/recruitByMajor/selRecruitByProvinceAndYearAndSubjectType.do"
+      ]
+    }
+  ],
+  "storage_rules": {
+    "record_key": "dataset/ext_key/year/official_id; missing official ID uses canonical original-row SHA256",
+    "deduplication": "Only identical rows with the same record_key are merged; every return locator remains in provenance. Conflicts stop import.",
+    "majorType_all": "Treat as school_summary while preserving its ext_key and original payload; do not merge with a different summary list.",
+    "numeric_values": "JSON scalar types and strings/null remain unchanged. CSV empty-cell projection is only for crosschecking.",
+    "provenance_indices": {
+      "query_index": "zero-based",
+      "row_index": "zero-based",
+      "csv_row": "physical one-based line including the header"
+    }
+  },
+  "exclusions": [
+    "2026分省录取图片公告未做OCR，不导入本结构化库。",
+    "2024—2025计划原始接口为空，不能用2026计划替代。",
+    "本数据不新增或推导专业组、位次、计划合计或录取概率。"
+  ]
+}
