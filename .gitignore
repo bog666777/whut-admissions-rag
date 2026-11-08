@@ -1,0 +1,13 @@
+.venv/
+.uv-cache/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.streamlit/secrets.toml
+runtime/
+reports/
+知识库官方资料/*
+!知识库官方资料/README.md
+.DS_Store
+Thumbs.db
